@@ -19,3 +19,14 @@ console.log(sapa("Andra")); // Output: Halo, Andra!
 const name = "Andra";
 const pesan = `Hai, ${name}. Welcome!`;
 console.log(pesan); // Output: Hai, Andra. Welcome!
+
+//4. Praktikkan destructuring pada array dan objek
+// Destructuring Array
+const angka = [4, 5, 6];
+const [empat, lima, enam] = angka;
+console.log(empat, lima, enam); // Output: 4 5 6
+
+// Destructuring Object
+const user = { namaa: "Andra", umur: 25 };
+const { namaa, umur } = user;
+console.log(namaa, umur); // Output: Andra 25
