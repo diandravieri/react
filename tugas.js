@@ -79,5 +79,35 @@ const fetchData = () => {
   
   getData(); 
   
+  //8. Buat class sederhana, lalu kembangkan dengan inheritance
+  // Membuat Class
+class Person {
+    constructor(nama, umur) {
+      this.nama = nama;
+      this.umur = umur;
+    }
   
+    perkenalan() {
+      return `Hello, my name ${this.nama} and my age ${this.umur} yo.`;
+    }
+  }
+  
+  const andra = new Person("Andra", 25);
+  console.log(andra.perkenalan()); 
+  
+ 
+  class Pengajar extends Person {
+    constructor(nama, umur, mataPelajaran) {
+      super(nama, umur);
+      this.mataPelajaran = mataPelajaran;
+    }
+  
+    mengajar() {
+      return `Saya mengajar ${this.mataPelajaran}.`;
+    }
+  }
+  
+  const DIAndra = new Pengajar("Andra", 25, "REACTJS");
+  console.log(DIAndra.perkenalan()); 
+  console.log(DIAndra.mengajar());   
 
