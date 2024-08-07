@@ -45,14 +45,39 @@ console.log(user2); // Output: { nama: "Andra", umur: 25, pekerjaan: "Developer"
 
 //6. Buat sebuah modul dengan export dan import fungsi di file lain
 // Mengimpor fungsi tambah,dan  kurang dari js/no6.js
-import { tambah, kurang} from './no6';
+// import { tambah, kurang} from './no6';
 
 // Menggunakan fungsi dan variabel yang diimpor
-const hasilTambah = tambah(4, 5);
-const hasilKurang = kurang(9, 3);
+// const hasilTambah = tambah(4, 5);
+// const hasilKurang = kurang(9, 3);
 
-console.log(`Hasil tambah: ${hasilTambah}`); // Output: Hasil tambah: 9
-console.log(`Hasil kurang: ${hasilKurang}`); // Output: Hasil kurang: 6
+// console.log(`Hasil tambah: ${hasilTambah}`); // Output: Hasil tambah: 9
+// console.log(`Hasil kurang: ${hasilKurang}`); // Output: Hasil kurang: 6
 
+
+//7. Buat dan gunakan promises, lalu ubah menjadi async/await
+// Menggunakan Promises
+const fetchData = () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("DONE");
+      }, 1000);
+    });
+  };
+  
+  fetchData().then(response => console.log(response)); 
+  
+  // Menggunakan Async/Await
+  const getData = async () => {
+    try {
+      const response = await fetchData();
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  
+  getData(); 
+  
   
 
