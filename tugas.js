@@ -30,3 +30,15 @@ console.log(empat, lima, enam); // Output: 4 5 6
 const user = { namaa: "Andra", umur: 25 };
 const { namaa, umur } = user;
 console.log(namaa, umur); // Output: Andra 25
+
+//5. Gunakan spread operator untuk menggabungkan dua array dan dua objek
+
+// Spread Operator pada Array
+const angka1 = [4, 5];
+const angka2 = [...angka1, 6, 7];
+console.log(angka2); // Output: [4, 5, 6, 7]
+
+// Spread Operator pada Object
+const user1 = { nama: "Andra", umur: 25 };
+const user2 = { ...user1, pekerjaan: "Pengembang" };
+console.log(user2); // Output: { nama: "Andra", umur: 25, pekerjaan: "Pengembang" }
