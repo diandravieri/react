@@ -40,5 +40,19 @@ console.log(angka2); // Output: [4, 5, 6, 7]
 
 // Spread Operator pada Object
 const user1 = { nama: "Andra", umur: 25 };
-const user2 = { ...user1, pekerjaan: "Pengembang" };
-console.log(user2); // Output: { nama: "Andra", umur: 25, pekerjaan: "Pengembang" }
+const user2 = { ...user1, pekerjaan: "Developer" };
+console.log(user2); // Output: { nama: "Andra", umur: 25, pekerjaan: "Developer" }
+
+//6. Buat sebuah modul dengan export dan import fungsi di file lain
+// Mengimpor fungsi tambah,dan  kurang dari js/no6.js
+import { tambah, kurang} from './no6';
+
+// Menggunakan fungsi dan variabel yang diimpor
+const hasilTambah = tambah(4, 5);
+const hasilKurang = kurang(9, 3);
+
+console.log(`Hasil tambah: ${hasilTambah}`); // Output: Hasil tambah: 9
+console.log(`Hasil kurang: ${hasilKurang}`); // Output: Hasil kurang: 6
+
+  
+
