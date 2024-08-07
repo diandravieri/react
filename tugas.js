@@ -1,3 +1,7 @@
+//UNTUK NO 6
+// const { tambah, kurang} = require('./no6.js');
+
+
 //1. Buatlah variabel menggunakan let dan const
 // Menggunakan let
 let nama = "Andra";
@@ -47,7 +51,6 @@ console.log(user2); // Output: { nama: "Andra", umur: 25, pekerjaan: "Developer"
 // Mengimpor fungsi tambah,dan  kurang dari js/no6.js
 // import { tambah, kurang} from './no6';
 
-// Menggunakan fungsi dan variabel yang diimpor
 // const hasilTambah = tambah(4, 5);
 // const hasilKurang = kurang(9, 3);
 
