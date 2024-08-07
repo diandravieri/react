@@ -14,3 +14,8 @@ console.log(pi); // Output: 3.14
 //2. Buat arrow function yang menerima parameter dan mengembalikan nilai
 const sapa = (nama) => `Halo, ${nama}!`;
 console.log(sapa("Andra")); // Output: Halo, Andra!
+
+//3. Gunakan template literals untuk menggabungkan string dan variabel
+const name = "Andra";
+const pesan = `Hai, ${name}. Welcome!`;
+console.log(pesan); // Output: Hai, Andra. Welcome!
